@@ -1,0 +1,401 @@
+{
+    "TYPES": {
+        "Actor": {
+            "character": "玩家角色",
+            "drone": "无人机",
+            "hazard": "危害",
+            "npc": "老式NPC",
+            "npc2": "NPC",
+            "starship": "星舰",
+            "vehicle": "载具"
+        },
+        "Item": {
+            "container": "容器",
+            "equipment": "护甲",
+            "goods": "杂物",
+            "mod": "无人机模块",
+            "race": "物种/种族",
+            "shield": "盾牌",
+            "spell": "法术",
+            "hybrid": "奇物",
+            "magic": "魔法",
+            "starshipAblativeArmor": "星舰烧蚀护甲",
+            "vehicleAttack": "载具攻击",
+            "weapon": "武器",
+            "starshipAction": "星舰动作",
+            "starshipComputer": "星舰电脑",
+            "starshipCrewQuarter": "星舰船员舱",
+            "vehicleSystem": "载具系统",
+            "starshipArmor": "星舰护甲",
+            "starshipDefensiveCountermeasure": "星舰反制措施",
+            "weaponAccessory": "武器配件",
+            "starshipFortifiedHull": "星舰强化船体",
+            "starshipOtherSystem": "星舰其他系统",
+            "starshipPowerCore": "星舰能量核心",
+            "starshipReinforcedBulkhead": "星舰加固舱壁",
+            "starshipSecuritySystem": "星舰安保系统",
+            "starshipSensor": "星舰传感器",
+            "starshipSpecialAbility": "星舰特殊能力",
+            "starshipShield": "星舰护盾",
+            "augmentation": "殖装",
+            "actorResource": "角色资源",
+            "ammunition": "弹药",
+            "archetypes": "变体",
+            "asi": "属性值提升",
+            "chassis": "无人机底盘",
+            "class": "职业",
+            "consumable": "消费品",
+            "feat": "专长",
+            "fusion": "武器融合",
+            "starshipDriftEngine": "星舰漂流引擎",
+            "starshipExpansionBay": "星舰扩展坞",
+            "starshipFrame": "星舰框架",
+            "starshipThruster": "星舰推进器",
+            "starshipWeapon": "星舰武器",
+            "technological": "科技物品",
+            "theme": "主题",
+            "upgrade": "护甲升级"
+        }
+    },
+    "SFRPG": {
+        "ACTooltipBase": "基础AC: {base}",
+        "ACTooltipBonus": "{type} 加值: {mod} ({source})",
+        "AbilityActivationTypesMove": "移动动作",
+        "AbilityActivationTypesNone": "无",
+        "AbilityInt": "智力",
+        "ACPTooltip": "护甲调整减值: {mod} ({source})",
+        "ACTooltipArmorACMod": "护甲调整值: {armor} ({name})",
+        "ACTooltipMaxDex": "敏捷调整值: {maxDex} (护甲上限: {armorMax}, 盾牌上限: {shieldMax})",
+        "ACTooltipNotProficientMod": "未擅长护甲罚值: {profMod}",
+        "ACTooltipShieldACMod": "盾牌调整值: {shield} ({name})",
+        "ACTooltipNotProficientShield": "未擅长盾牌罚值: {profMod}",
+        "ACvsCombatManeuversLabel": "KAC + 8",
+        "ACvsCombatManeuversTitle": "AC vs 战技",
+        "AbilityActivationTypesDay": "天",
+        "AbilityActivationTypesFull": "完整动作",
+        "AbilityActivationTypesHour": "小时",
+        "AbilityActivationTypesMinute": "分",
+        "AbilityActivationTypesNoneButton": "行动",
+        "AbilityActivationTypesOther": "其他动作",
+        "AbilityActivationTypesReaction": "反应",
+        "AbilityActivationTypesRound": "轮",
+        "AbilityActivationTypesSpecial": "特殊",
+        "AbilityActivationTypesStandard": "标准动作",
+        "AbilityActivationTypesSwift": "迅捷动作",
+        "AbilityCha": "魅力",
+        "AbilityCon": "体质",
+        "AbilityDamagePlaceholder": "伤害",
+        "AbilityDamageTitle": "属性伤害",
+        "AbilityDamageTooltip": "属性伤害: {mod}",
+        "AbilityDex": "敏捷",
+        "AbilityDrainPlaceholder": "DRN",
+        "AbilityDrainTitle": "属性吸取",
+        "AbilityDrainTooltip": "属性吸取: {mod}",
+        "AbilityModifierBase": "基础属性调整: {mod}",
+        "AbilityModifiersTooltip": "{type} 加值: {mod} ({source})",
+        "AbilityPenaltyTooltip": "属性罚值: {mod}",
+        "AbilityScoreBase": "基础属性值",
+        "AbilityScoreBonusTooltip": "{type} 加值: {mod} ({source})",
+        "AbilityScoreGenericTooltip": "{score} 属性值: {value} ({source})",
+        "AbilityScoreIncreaseTooltip": "属性值提升: {mod}",
+        "AbilityScoreRaceTooltip": "种族/物种: {mod}",
+        "AbilityScoreThemeTooltip": "主题: {mod}",
+        "AbilityStr": "力量",
+        "AbilityWis": "感知",
+        "About": "关于",
+        "ActorSheet": {
+            "Attributes": {
+                "Speed": {
+                    "MovementSpeedNamedTitle": "移动速度: {name}",
+                    "MovementSpeedTitle": "移动速度",
+                    "Flight": {
+                        "Average": "平均",
+                        "Clumsy": "笨拙",
+                        "Perfect": "完美"
+                    },
+                    "MainMovementType": "主要移动",
+                    "Types": {
+                        "All": "全部速度",
+                        "Burrowing": "挖掘",
+                        "Climbing": "攀爬",
+                        "Flying": "飞行",
+                        "Land": "陆地",
+                        "Special": "特殊",
+                        "Swimming": "游泳"
+                    }
+                },
+                "Skills": {
+                    "SkillRanks": "技能等级"
+                }
+            },
+            "Biography": {
+                "DateOfBirth": "出生日期",
+                "Weight": "体重",
+                "Age": "年龄",
+                "AgePlaceholder": "e.g. 19",
+                "DateOfBirthPlaceholder": "e.g. 6th of Gozran, 300 AG",
+                "Deity": "神祗",
+                "DeityPlaceholder": "e.g. 法莱斯玛",
+                "GenderPronouns": "性别/代词",
+                "GenderPronounsPlaceholder": "e.g. 它/它们",
+                "Height": "身高",
+                "HeightPlaceholder": "e.g. 5'4\"",
+                "HomeWorld": "家园世界",
+                "HomeWorldPlaceholder": "e.g. Akiton",
+                "ImageTooltip": "这是你角色的全身立绘图，最好是200X250或者4:5比例的图片。",
+                "OtherVisuals": "图像",
+                "TabBio": "简介",
+                "TabEcology": "生态",
+                "TabGM": "GM笔记",
+                "TooltipGM": "有GM笔记贴在这个角色上。",
+                "WeightPlaceholder": "e.g. 130 lbs"
+            },
+            "Features": {
+                "Categories": {
+                    "Archetypes": "变体",
+                    "Classes": "职业",
+                    "ActiveFeats": "主动专长",
+                    "ActorResources": "角色资源",
+                    "PassiveFeats": "被动专长",
+                    "Race": "种族",
+                    "Theme": "主题"
+                },
+                "Create": "创建新特征",
+                "Filters": {
+                    "Action": "动作",
+                    "Bonus": "附赠",
+                    "Reaction": "反应"
+                }
+            },
+            "Header": {
+                "Hitpoints": {
+                    "ClassTooltip": "职业基础: {mod} ({source})",
+                    "RacialTooltip": "种族基础: {mod} ({source})"
+                },
+                "CL": "CL",
+                "Resolve": {
+                    "KeyAbilityTooltip": "关键属性基础: {mod} ({kas}, {source})",
+                    "LevelTooltip": "等级基础: {mod}"
+                },
+                "Stamina": {
+                    "ClassTooltip": "职业基础: {mod} ({source})",
+                    "ConstitutionTooltip": "体质基础: {mod}"
+                }
+            },
+            "Inventory": {
+                "Container": {
+                    "AffectsEncumbranceCheckbox": "包含的物品计入负重。",
+                    "AffectsEncumbranceTooltip": "如果关闭，先攻将不再计算负重调整。",
+                    "AcceptedItemTypes": "接受的物品类别",
+                    "AcceptedItemTypesTooltip": "这部分允许你指定容器来单独接受某一部分物品。",
+                    "AffectsEncumbrance": "负重累赘",
+                    "Capacity": "负载",
+                    "CapacityBulk": "负载",
+                    "CapacityBulkTooltip": "这个容器里能够容纳多少负载的物品",
+                    "CapacityPropertyItems": "物品",
+                    "CapacityLabelBulk": "负重",
+                    "CapacityLabelItems": "物品"
+                }
+            }
+        },
+        "AbilityPenaltyPlaceholder": "PNL",
+        "AbilityPenaltyTitle": "属性罚值",
+        "AbilityScoreBaseTooltip": "基础属性值: {mod}",
+        "AbilityScoreBonusModifiedTooltip": "{type} 加值: {mod} (结算自 {base}) ({source})",
+        "ActionAbil": "属性测试",
+        "ActionHeal": "治疗",
+        "ActionMSAK": "近战法术攻击",
+        "ActionMWAK": "近战武器攻击",
+        "ActionOther": "其他",
+        "ActionRSAK": "远程法术攻击",
+        "ActionRWAK": "远程武器攻击",
+        "ActionSave": "濒死豁免",
+        "ActionSkill": "技能检定",
+        "ActionUtil": "多用",
+        "Capacity": {
+            "UsagePer": {
+                "Hour8": "8小时",
+                "Minute10": "10分钟"
+            }
+        },
+        "ChatCard": {
+            "ContextMenu": {
+                "Accept": "接受"
+            }
+        },
+        "Descriptors": {
+            "ForceDescription": "力场效果能够对虚体生物造成完整伤害，同样的，它能够阻断所有感觉能力。",
+            "CallingDescription": "召唤效果将一个生物从另一个位面运送到你所在的位面。该效果赋予该生物一次性的返回其原住位面的能力，尽管该效果可能会限制这种情况的发生。被召唤的生物如果在新的位面死亡，那么他就真的被杀死了。被召唤的生物是不能被驱散的，即使它是用魔法召唤的。"
+        },
+        "DroneSheet": {
+            "Chassis": {
+                "Details": {
+                    "AbilityScores": {
+                        "Header": "属性值",
+                        "Increases": "属性值提升"
+                    }
+                }
+            }
+        },
+        "ItemSheet": {
+            "AbilityScoreIncrease": {
+                "Header": "属性值提升",
+                "Label": "属性",
+                "ItemName": "属性值提升: Level {level}"
+            },
+            "StarshipFrame": {
+                "Details": {
+                    "WeaponArcAft": "Aft Arc"
+                }
+            },
+            "StarshipArmor": {
+                "Header": "烧蚀装甲特性"
+            },
+            "StarshipAblativeArmor": {
+                "Header": "烧蚀装甲特性"
+            }
+        },
+        "Items": {
+            "Action": {
+                "ActionTarget": {
+                    "StarshipAC": "AC"
+                },
+                "AbilityModifier": "属性调整"
+            },
+            "Theme": {
+                "AbilityAdjustment": "属性调整"
+            },
+            "Categories": {
+                "AbilityScoreIncrease": "属性值提升"
+            },
+            "ShipWeapon": {
+                "ReloadCost": "10分钟"
+            }
+        },
+        "LanguagesAbyssal": "深渊语",
+        "Levels": {
+            "10": "10",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "1": "1",
+            "20": "20",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "0": "0",
+            "11": "11"
+        },
+        "Magic": {
+            "Levels": {
+                "1": "1级",
+                "2": "2级",
+                "4": "4级",
+                "5": "5级",
+                "6": "6级",
+                "3": "3级",
+                "0": "0级"
+            },
+            "Schools": {
+                "Abjuration": "防护学派"
+            }
+        },
+        "ModifierEffectTypeAbilityCheck": "属性检定",
+        "ModifierEffectTypeAbilityChecks": "属性检定",
+        "ModifierEffectTypeAbilitySkills": "属性技能",
+        "ModifierEffectTypeHeaderLabel": "受影响的属性",
+        "RaceAbilityAdjustments": "属性调整",
+        "Rest": {
+            "Short": {
+                "DialogTitle": "10分钟短休",
+                "Title": "10分钟短休"
+            }
+        },
+        "Rolls": {
+            "Dice": {
+                "AbilityCheckTitle": "属性检定 - {label}"
+            },
+            "StarshipActions": {
+                "Quadrant": {
+                    "Aft": "Aft"
+                }
+            },
+            "Character": {
+                "ChargeTooltip": "移动后，你可以进行一次近战攻击。在下一个回合开始之前，你在攻击掷骰上具有-2罚值，同时AC也具有-2罚值。"
+            }
+        },
+        "ShipSystems": {
+            "StarshipArcs": {
+                "Aft": "Aft"
+            }
+        },
+        "SpecialMaterials": {
+            "Abysium": "深渊"
+        },
+        "StarshipSheet": {
+            "Details": {
+                "Ablative": {
+                    "Aft": "Aft烧蚀护甲",
+                    "Header": "烧蚀"
+                }
+            },
+            "Modifiers": {
+                "AblativeOverload": "烧蚀超载: {mod}"
+            },
+            "Weapons": {
+                "AftArc": "Aft Arc ({slots})"
+            },
+            "Features": {
+                "Prefixes": {
+                    "StarshipAblativeArmors": "烧蚀护甲"
+                }
+            },
+            "Quadrants": {
+                "AblativeHeader": "烧蚀护甲"
+            },
+            "Damage": {
+                "Quadrant": {
+                    "Aft": "Aft"
+                }
+            },
+            "Sides": {
+                "Aft": "Aft"
+            }
+        },
+        "ModifierTypeAbility": "属性",
+        "NPCSheet": {
+            "Header": {
+                "AbilityDC": "属性DC"
+            }
+        },
+        "ModifierEffectTypeAbilityScore": "属性值",
+        "SkillTooltipAbilityMod": "属性调整: {abilityMod} ({abilityAbbr})",
+        "SaveAbilityModTooltip": "属性调整: {mod} ({ability})",
+        "SkillsHeaderAbility": "属性",
+        "VehicleSheet": {
+            "Header": {
+                "LevelPlaceholder": "1"
+            }
+        },
+        "LimitedUsePeriodsShort": "10分钟短休",
+        "WeaponPropertiesBreachTooltip": "破拆武器是专门被设计用来破拆墙壁与门的一种武器，如果你在工程学上受训，你可以进行一次完整动作，来对你接邻的墙或门使用破拆武器，GM可以决定你是否可以对类似的物品使用此类武器。进行破拆时你依然需要消耗弹药，但不需要投攻击骰，而是进行力量检定与其破拆DC进行对比（核心规则手册408页），在这次检定中你将破拆武器的物品等级加入调整值。",
+        "WeaponPropertiesBreakdownTooltip": "可拆卸武器允许你将其拆分成数个微小的零部件，分解后，零件很小并且易于隐藏，以满足手上功夫对隐藏对象的需求。拆分后的可拆卸武器可以被放入通常只能容纳轻型物品的容器（包括鼠人的颊囊中！），拆卸或重装可拆卸武器需要1分钟时间。",
+        "ModifierValueAffectedHeaderLabel": "影响值",
+        "WeaponPropertiesForceTooltip": "力场武器的攻击具有力场效果，这让他与其他目标可能会产生与原本不同的交互（基于目标的特殊规则决定），力场武器造成动能伤害但依然使用目标的EAC进行检定。",
+        "WeaponPropertiesFlexibleLineTooltip": "线形武器能够在使用者身边一定范围内产生一条线，并使用其作为攻击手段。选择两个点，且两个点必须均处于第一射程增量内，武器的效果将会从一点延伸到另一点。除此之外，攻击将会附有线形武器的额外特性。",
+        "WeaponPropertiesFreeHandsTooltip": "余手武器的配重是不平衡的，或者在其他方面难以使用。这种使用武器的困难可以通过挥舞与余手词条上标注数量相同的未持有任何物品的手来抵消。你依然需要使用两只手挥舞余手武器，但如果你在挥舞武器时有词条列出的自由手数量，该武器就不会被认为是笨重的。例如，一个卡萨达人用两只手挥舞着火焰旋转器，而她的另两只手仍然是空的，那她就可以将这把武器当作没有笨重的武器来使用。",
+        "FloatingHPVerbose": {
+            "Sh.A.": "Aft 护盾"
+        }
+    }
+}
