@@ -194,7 +194,8 @@
                     "CapacityBulkTooltip": "这个容器里能够容纳多少负载的物品",
                     "CapacityPropertyItems": "物品",
                     "CapacityLabelBulk": "负重",
-                    "CapacityLabelItems": "物品"
+                    "CapacityLabelItems": "物品",
+                    "CapacityPropertyItemsTooltip": "When set to Items, this container will accept up to the amount of items specified in capacity. Items with a quantity higher than 1 will count more towards this limit."
                 }
             }
         },
